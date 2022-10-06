@@ -1,0 +1,211 @@
+/* FONTS USED */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* COLOR AND FONT VARS */
+:root {
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --cream: hsl(26, 40%, 92%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --active-dark-cyan: hsl(156, 42%, 18%);
+    
+    --main-font: 'Montserrat', sans-serif;
+    --seconday-font: 'Fraunces', serif;
+}
+
+/* GENERAL STYLE */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+/* Header Style */
+.title {
+    font-family: var(--seconday-font);
+    color: var(--active-dark-cyan);
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Main Style */
+.container .card {
+    max-width: 600px;
+    max-height: 450px;
+    background: var(--white);
+    margin-top: 80px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-img .desktop-img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+    filter:saturate(103%) contrast(115%) brightness(86%);
+}
+
+.item-img .mobile-img {
+    display: none;
+}
+
+.card .card-info {
+    padding: 30px;
+}
+
+.card-info .item-category {
+    font-family: var(--main-font);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--dark-grayish-blue);
+}
+
+.card-info .item-name {
+    font-family: var(--seconday-font);
+    font-size: 32px;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.card-info .item-description {
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+.card-info .prices {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-info .prices .new-price {
+    color: var(--dark-cyan);
+    font-family: var(--seconday-font);
+    font-size: 32px;
+}
+.card-info .prices .old-price {
+    margin-left: 20px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.shopping-btn {
+    width: 235px;
+    height: 48px;
+    border-radius: 8px;
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--main-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.shopping-btn .cart-icon {
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.shopping-btn:hover {
+    background-color: var(--active-dark-cyan);
+    transition: all ease-in-out .2s;
+}
+
+
+/* Footer Style */
+.attribution { 
+    font-size: 12px;
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 640px) {
+    .container .card {
+        max-width: 340px;
+        max-height: 610px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+    }
+    
+    .item-img .desktop-img {
+        display: none;
+    }
+    
+    .item-img .mobile-img {
+        display: block;
+        width: 340px;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+        filter:saturate(103%) contrast(115%) brightness(86%);
+    }
+
+    .card .card-info {
+        padding: 22px;
+    }
+
+    .card-info .item-name {
+        margin-top: 13px;
+    }
+
+    .card-info .item-description {
+        margin-top: 13px;
+    }
+
+    .card-info .prices {
+        margin: 20px 0 17px 0;
+    }
+
+    .shopping-btn {
+        width: 295px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 620px) {
+    .title {
+        font-size: 28px;
+    }
+
+    body {
+        margin-top: 30px;
+    }
+    
+    .container .card {
+        margin-top: 20px;
+    }
+}
