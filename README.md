@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Live site Link](https://your-solution-url.com)
-- Live Site URL: [Repository Link](https://github.com/GregoriM04/product-preview-card-component-main.git)
+- Live Site URL: [Click me](https://gregorim04.github.io/product-preview-card-component-main/)
+- Github URL: [Click me](https://github.com/GregoriM04/product-preview-card-component-main.git)
 
 
 ## My process
