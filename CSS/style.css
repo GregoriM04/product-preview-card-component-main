@@ -148,6 +148,14 @@ body {
 
 
 /* MEDIA QUERY */
+@media (max-width: 1366px) {
+    body {
+        margin-top: 30px;
+    }
+    .container .card {
+        margin-top: 50px;
+    }
+}
 
 @media (max-width: 640px) {
     .container .card {
